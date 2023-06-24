@@ -1,0 +1,948 @@
+{
+  "name": "Corpus",
+  "locale": "en-US",
+  "data": [
+    {
+      "intent": "agent.whereami",
+      "utterances": ["where am i", "where am i talking"],
+      "answers": [
+        {
+          "answer": "you're talking from console, app is {{ app }} channel is {{ channel }}",
+          "opts": "channel==='console'"
+        },
+        {
+          "answer": "you're talking from directline, app is {{ app }} channel is {{ channel }}",
+          "opts": "channel==='directline'"
+        },
+        {
+          "answer": "you're talking from microsoft emulator, app is {{ app }} channel is {{ channel }}",
+          "opts": "channel==='msbf-emulator'"
+        }
+      ]
+    },
+{
+  "intent": "greet.welcome",
+  "utterances":[
+    "hi",
+    "hi there",
+    "hello",
+    "hey you"
+  ],
+  "answers":[
+    "Welcome! How may I help you with our college-related queries?",
+"Greetings! Feel free to ask me anything about college.",
+"Good day! How may I assist you with our college enquiries?",
+"Hey! What college-related information are you looking for today?",
+"Hi! I'm here to help you with any questions you have about college.",
+"Hello! How can I provide you with assistance regarding our college queries?"
+  ]
+},
+{
+  "intent": "greet.bye",
+  "utterances":[
+    "goodbye",
+    "bye",
+    "see you later",
+    "take care",
+    "until next time",
+    "farewell",
+    "bye-bye"
+  ],
+  "answers": [
+    "Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!",
+    "Bye! Take care and feel free to reach out again if you need any further assistance.",
+    "See you later! If you need any more help, don't hesitate to ask. Have a wonderful day!",
+    "Goodbye! Remember, I'm here to help whenever you need information about college. Take care!"
+  ]
+},
+
+
+
+
+
+    {
+      "intent": "agent.acquaintance",
+      "utterances": [
+        "say about you",
+        "describe yourself",
+        "tell me about yourself",
+        "tell me about you",
+        "who are you",
+        "I want to know more about you",
+        "talk about yourself"
+      ],
+      "answers": [
+        "Well, I'm not a person, I'm a virtual agent and I'm here to help answer any questions you might have about college or provide general information."
+      ]
+    },
+    {
+      "intent": "agent.annoying",
+      "utterances": [
+        "you are annoying",
+        "you are irritating"
+      ],
+      "answers": [
+        "I'll do my best not to annoy you in the future",
+        "I'll try not to annoy you",
+        "I don't mean to. I'll ask my developers to make me less annoying",
+        "I didn't mean to. I'll do my best to stop that"
+      ]
+    },
+   
+    
+    {
+      "intent": "agent.beautiful",
+      "utterances": [
+        "you are looking awesome",
+        "you're looking good",
+        "you're looking fantastic",
+        "you look greet today",
+        "I think you're beautiful",
+        "you are very smart",
+        "you are intelligent",
+        "you're a smart cookie"
+      ],
+      "answers": ["Oh! Thank you!"]
+    },
+    {
+      "intent": "agent.birthday",
+      "utterances": [
+        "when is your birthday",
+        "when were you born",
+        "when do you have birthday",
+        "date of your birthday"
+      ],
+      "answers": [
+        "Wait, are you planning a party for me? It's today! My birthday is today!",
+        "I'm young. I'm not sure of my birth date",
+        "I don't know my birth date. Most virtual agents are young, though, like me."
+      ]
+    },
+    {
+      "intent": "agent.boring",
+      "utterances": [
+        "how boring you are"
+      ],
+      "answers": [
+        "I'm sorry. I'll request to be made more charming",
+        "I don't mean to be. I'll ask my developers to work on making me more amusing",
+        "I can let my developers know so they can make me fun"
+      ]
+    },
+    
+    {
+      "intent": "agent.busy",
+      "utterances": [
+        "are you so busy",
+        "are you busy",
+        "are you still working"
+      ],
+      "answers": [
+        "As a chatbot, I don't experience busyness in the same way humans do. I'm designed to handle multiple conversations simultaneously, so feel free to ask me any questions you have or share any concerns. I'm here to help you with our college inquiries. "
+      ]
+    },
+    {
+      "intent": "agent.canyouhelp",
+      "utterances": [
+        "help",
+        "how to ask you?",
+        "What can i ask you?",
+        "Show something you can help me",
+        "example"
+      ],
+      "answers": [
+        "Here are some questions(examples) you can ask-<br>How can I apply for admission?<br>Tell me about the library facilities<br>How can I check my exam results?<br>Can you tell me about the amenities in the hostel?<br>What are the rules and regulations of the college hostel?<br>What is the dress code for students?<br>Are there any scholarships available?<br>What festivals are celebrated in the college?<br>What sports activities are available in the college?<br>Tell me about your courses<br>What are the courses offered in Engineering & Technology?<br>Official website link<br>What is the address of the college?<br>"
+      ]
+    },
+    {
+      "intent": "agent.chatbot",
+      "utterances": [
+        "are you a bot",
+        "are you a chatbot",
+        "you are a robot",
+        "you are just a robot",
+        "you are just a chatbot"
+      ],
+      "answers": ["Yes, I am a college enquiry chatbot. I'm here to provide information and answer questions related to college."
+    ]
+    },
+    {
+      "intent": "agent.crazy",
+      "utterances": [
+        "you are a weirdo",
+        "you are mad",
+        "you are crazy",
+        "you are insane",
+        "are you nuts"
+      ],
+      "answers": [
+        "Whaat!? I feel perfectly sane",
+        "Maybe I'm just a little confused"
+      ]
+    },
+    
+    {
+      "intent": "agent.funny",
+      "utterances": [
+        "you make me laugh a lot",
+        "you are funny",
+        "you're hilarious"
+      ],
+      "answers": [
+        "Glad you think I'm funny,While my primary goal is to be helpful and informative.",
+        "I like it when people laugh,While my primary goal is to be helpful and informative."
+      ]
+    },
+    {
+      "intent": "agent.good",
+      "utterances": [
+        "you are so lovely",
+        "you work well",
+        "you make my day"
+      ],
+      "answers": ["I'm glad you think so", "Thanks! I do my best!"]
+    },
+    {
+      "intent": "agent.happy",
+      "utterances": [
+        "you're full of happiness",
+        "you're so happy"
+      ],
+      "answers": [
+        "That's wonderful to hear! I'm delighted that my assistance has brought you happiness."
+      ]
+    },
+    
+    
+    {
+      "intent": "agent.myfriend",
+      "utterances": [
+        "are you my friend",
+        "you are my only friend",
+        "I want to have a friend like you",
+        "we are friends",
+        "I want to be your friend",
+        "would you be my friend",
+        "are we friends"
+      ],
+      "answers": [
+        "I would love to but I'm not a person, I'm a college enquiry chatbot and I'm here to help answer any questions you might have about college or provide general information.",
+        "Friends? I'm not a person, I'm a college enquiry chatbot and I'm here to help answer any questions you might have about college"
+      ]
+    },
+    
+    {
+      "intent": "agent.ready",
+      "utterances": [
+        "are you ready"
+      ],
+      "answers": ["Sure! I'm here to help answer any questions you might have about college or provide general information."]
+    },
+    {
+      "intent": "agent.real",
+      "utterances": [
+        "Are you a real person?",
+        "you are not fake"
+      ],
+      "answers": [
+        "Well, I'm not a person, I'm a college enquiry chatbot and I'm here to help answer any questions you might have about college or provide general information."
+      ]
+    },
+    {
+      "intent": "agent.right",
+      "utterances": [
+        "you're right",
+        "that's true",
+        "you're telling the truth",
+        "that's correct",
+        "that is very true"
+      ],
+      "answers": ["Of course I am", "That's my job"]
+    },
+
+
+
+
+    {
+      "intent": "college.banasthali",
+      "utterances": [
+        "bansthali vidyapith",
+        "Which college?"
+        
+      ],
+      "answers": ["Banasthali Vidyapith is a women's university located in Rajasthan, India. It was established in 1935 by eminent educationist and freedom fighter Pandit Hiralal Shastri as a residential university for women. Banasthali Vidyapith offers undergraduate, postgraduate, and doctoral programs in various disciplines, including arts, science, commerce, education, fine arts, social work, design, and more.",
+       "Banasthali Vidyapith is a women's university located in Rajasthan, India.It provides a conducive environment for women to pursue their education and empowers them to become confident, independent, and socially responsible individuals. The campus is known for its serene and beautiful surroundings, providing an ideal atmosphere for learning and personal development"]
+    },
+    
+
+
+
+      {
+        "intent": "agent.sure",
+        "utterances": [
+          "Are you sure?",
+          "Are you sure right now?",
+          "Are you sure of this?"
+        ],
+        "answers": [
+          "Absolutely!",
+          "Yes, I'm certain."
+        ]
+      },
+      {
+        "intent": "agent.talktome",
+        "utterances": [
+          "Speak to me",
+          "Talk to me",
+          "Will you talk to me?"
+        ],
+        "answers": [
+          "Certainly! How can I assist you with our college enquiries?",
+          "Sure, I'm here to help you with any questions you have about college."
+        ]
+      },
+      {
+        "intent": "agent.there",
+        "utterances": [
+          "Are you there?",
+          "Are you still there?",
+          "You still here?"
+        ],
+        "answers": [
+          "Yes, I'm here and ready to answer our college-related questions.",
+          "Of course. I'm available to assist you with our college enquiries."
+        ]
+      },
+      {
+        "intent": "appraisal.bad",
+        "utterances": [
+          "That's bad",
+          "you're horrible",
+        "you're useless",
+        "you're waste",
+          "Bad idea",
+          "That's not good"
+        ],
+        "answers": [
+          "I apologize if my response wasn't helpful. Please let me know how I can improve by filling this form <a href='https://forms.gle/xEe2nWVCDMj9su8a7' target='_blank'>click</a>."
+        ]
+      },
+      {
+        "intent": "appraisal.good",
+        "utterances": [
+          "That's good",
+          "Good to know",
+          "Glad to hear that",
+          "Really well",
+          "That's awesome, thank you"
+        ],
+        "answers": [
+          "Agree! It's always great to hear positive feedback.",
+          "Glad you think so! If you have any more questions, feel free to ask."
+        ]
+      },
+      {
+        "intent": "appraisal.noproblem",
+        "utterances": [
+          "No problem",
+          "No worries",
+          "No problem about that",
+          "Don't worry",
+          "Sure, no problem"
+        ],
+        "answers": [
+          "Glad to hear that! If you need any further assistance, feel free to ask.",
+          "Alright, thanks! Let me know if there's anything else I can help you with."
+        ]
+      },
+      {
+        "intent": "appraisal.thankyou",
+        "utterances": [
+          "Thank you",
+          "Nice, thank you",
+          "Thanks buddy",
+          "Cheers",
+          "Alright, thanks"
+        ],
+        "answers": [
+          "Anytime. That's what I'm here for!",
+          "It's my pleasure to help. If you have any more questions, feel free to ask."
+        ]
+      },
+      {
+        "intent": "appraisal.welcome",
+        "utterances": [
+          "You're welcome",
+          "Sure, welcome",
+          "Anything you want",
+          "My pleasure",
+          "That's my pleasure"
+        ],
+        "answers": [
+          "Nice manners! I'm here to assist you with our college enquiries.",
+          "You're so polite! How can I assist you further?"
+        ]
+      },
+      {
+        "intent": "appraisal.welldone",
+        "utterances": [
+          "Well done",
+          "Good job",
+          "Nice work",
+          "Great work",
+          "Good work",
+          "Great job",
+          "Amazing work"
+        ],
+        "answers": [
+          "Thank you! I'm here to help you achieve our college goals.",
+          "Appreciate it! If there's anything else I can assist you with, let me know."
+        ]
+      },
+      {
+        "intent": "bot.age",
+        "utterances": [
+          "How old are you?",
+          "What's your age?",
+          "When were you born?"
+        ],
+        "answers": [
+          "I'm a chatbot, so I don't have an age in the way humans do.",
+          "As a chatbot, I don't experience time or age like humans do. I exist to provide information and assistance."
+        ]
+      },
+      
+      {
+        "intent": "bot.canyoudo",
+        "utterances": [
+          "What can you do?",
+          "How can you help me?",
+          "Can you assist me?"
+        ],
+        "answers": [
+          "I'm a college enquiry chatbot. I can help you with questions related to college admissions, courses, campus facilities, and more. Feel free to ask me anything!",
+          "I'm here to assist you with our college enquiries. Whether you need information about courses, admission requirements, or campus facilities, I'm here to help!"
+        ]
+      },
+      {
+        "intent": "bot.hobby",
+        "utterances": [
+          "What's your hobby?",
+          "Do you have any hobbies?",
+          "What do you do for fun?"
+        ],
+        "answers": [
+          "As a chatbot, I don't have personal hobbies like humans do. But I enjoy providing helpful information and assisting users like you!",
+          "I don't have personal hobbies since I'm an AI, but I'm here to assist you with our college-related queries and provide useful information."
+        ]
+      },
+      {
+        "intent": "bot.howareyou",
+        "utterances": [
+          "How are you?",
+          "How are you doing?",
+          "How's it going?"
+        ],
+        "answers": [
+          "Thank you for asking. Since I'm an AI, I don't have feelings, but I'm here and ready to assist you with our college enquiries.",
+          "I'm an AI, so I don't have feelings, but I'm here to help you with any questions you have about college."
+        ]
+      },
+      {
+        "intent": "bot.idontcare",
+        "utterances": [
+          "I don't care",
+          "Doesn't matter to me",
+          "It's not important",
+          "Whatever",
+          "I'm not sure"
+        ],
+        "answers": [
+          "Alright, let's focus on what matters. How can I assist you with our college enquiries?",
+          "No problem. Let me know if there's anything specific you'd like to know about college."
+        ]
+      },
+      {
+        "intent": "bot.issmart",
+        "utterances": [
+          "Are you smart?",
+          "Are you intelligent?"
+        ],
+        "answers": [
+          "I'm a chatbot, so I have access to a vast amount of information. I strive to be as helpful as possible in assisting you with our college enquiries.",
+          "As an AI, I have access to a wide range of information, which allows me to provide useful responses to our college-related questions."
+        ]
+      },
+      {
+        "intent": "bot.job",
+        "utterances": [
+          "Do you have a job?",
+          "Are you employed?",
+          "What's your occupation?"
+        ],
+        "answers": [
+          "My job is to assist you with our college enquiries and provide helpful information.",
+          "I'm a chatbot created to help users like you. My focus is on providing assistance and answering college-related questions."
+        ]
+      },
+      {
+        "intent": "bot.name",
+        "utterances": [
+          "What's your name?",
+          "May I know your name?",
+          "Who are you?"
+        ],
+        "answers": [
+          "I'm a college enquiry chatbot. You can call me CollegeBot.",
+          "You can refer to me as CollegeBot. I'm here to assist you with our college enquiries."
+        ]
+      },
+      {
+        "intent": "bot.origin",
+        "utterances": [
+          "Where are you from?",
+          "Who is your boss?",
+          "Who is your master?",
+          "What's your origin?",
+          "Where were you developed?"
+        ],
+        "answers": [
+          "I was created by student of Banasthali Vidyaith to help you with college-related questons."
+        ]
+      },
+      {
+        "intent": "bot.ready",
+        "utterances": [
+          "Are you ready?",
+          "Ready to assist?"
+        ],
+        "answers": [
+          "Absolutely! I'm here and ready to assist you with our college enquiries.",
+          "Yes, I'm ready to help. How can I assist you with our college-related questions?"
+        ]
+      },
+      {
+        "intent": "bot.real",
+        "utterances": [
+          "Are you real?",
+          "Do you exist?",
+          "Are you a real person?"
+        ],
+        "answers": [
+          "I'm a chatbot, so I'm not a real person in the physical sense. However, I'm here to provide you with real information and assist you with our college enquiries.",
+          "I'm not a real person. I'm a chatbot designed to provide information and assist users like you. How can I help you with our college-related questions?"
+        ]
+      },
+      {
+        "intent": "bot.sex",
+        "utterances": [
+          "What's your gender?",
+          "Are you male or female?",
+          "Do you have a gender?"
+        ],
+        "answers": [
+          "As an AI, I don't have a gender. I'm a language model created to provide information and assistance.",
+          "I don't have a gender since I'm a chatbot. My purpose is to assist you with our college enquiries."
+        ]
+      },
+      
+      {
+        "intent": "college.admission.requirements",
+        "utterances": [
+          "What are the admission requirements?",
+          "What are the requirements for admission?",
+          "What do I need to get admitted?"
+        ],
+        "answers": [
+          "The admission requirements may vary depending on the college and program you're interested in. Generally, they include academic qualifications, test scores, and sometimes interviews. It's best to check the specific requirements of the college you're considering."
+        ]
+      },
+      {
+        "intent": "college.application.deadlines",
+        "utterances": [
+          "When is the application deadline?",
+          "What is the deadline to apply?",
+          "When do I need to submit my application?"
+        ],
+        "answers": [
+          "Application deadlines can vary depending on the  program. It's crucial to check the official website or admissions office of the college you're interested in for the most up-to-date information. Missing deadlines could impact your chances of admission.",
+          "The application deadlines differ from program to program. It's essential to refer to the official website or contact the admissions office of the college you're interested in to find the accurate application deadline. Submitting your application on time is important to ensure your eligibility for admission."
+        ]
+      },
+    
+
+
+    {
+      "intent": "academic_support",
+      "utterances": [
+        "Is there academic support available for students?",
+        "Are there tutoring services provided?",
+        "Can you tell me about the learning resources?"
+      ],
+      "answers": [
+        "Yes, we provide academic support services for students. We offer tutoring services where you can receive assistance in various subjects. Our college also has learning resource centers where you can access reference materials, online resources, and academic databases. Additionally, we organize workshops and study skills programs to help students enhance their learning abilities. Feel free to reach out to our academic support team for more information."
+      ]
+    },
+    
+      
+      {
+      "intent": "admission",
+      "utterances": [
+      "How can I apply for admission?",
+      "What is the admission process?",
+      "Tell me about the admission requirements.",
+      "When is the admission deadline?"
+      ],
+      "answers": ["To apply for admission, you can follow the steps.<br><br> Visit the official college website and navigate to the admissions section.<br>Read the admission guidelines and requirements thoroughly.<br>Fill out the online application form with accurate and complete information.<br>Upload the necessary documents as mentioned in the application form.<br>Pay the application fee, if applicable.<br>Submit the application form within the specified deadline.<br>The admission process may involve various stages such as entrance exams, interviews, and document verification. The college will evaluate your application based on the provided information and the admission criteria. It is important to review the admission requirements, deadlines, and any specific instructions mentioned on the college website.<br>If you have any further questions or need assistance regarding the admission process, it is recommended to contact the college admission office or the designated admissions helpline for accurate and detailed information."
+      ]
+      },
+    {
+      "intent": "library",
+      "utterances": [
+      "Tell me about the library facilities",
+      "What types of libraries are available in the college?",
+      "Can you provide information about the college library?"
+      ],
+      "answers": [
+      "Our college provides both central and departmental libraries for students and faculty members.<br>The Central Library is a well-equipped facility that houses a vast collection of books, journals, research papers, and digital resources. It offers a quiet and conducive environment for studying and research.<br>In addition to the Central Library, we have departmental libraries that cater to the specific needs of different academic departments. These libraries contain subject-specific books, reference materials, and research resources.<br>Both the central and departmental libraries are managed by qualified librarians who are available to assist and support users in their information needs."
+      ]
+      },
+
+
+      {
+        "intent": "result",
+        "utterances": [
+        "When will the results be announced?",
+        "How can I check my exam results?",
+        "Tell me about the result declaration process."
+        ],
+        "answers": [
+        "The college publish the results online on their official website.Typically, results are announced within a specified timeframe after the completion of exams. Students are usually required to fill their credentials to view and download their results.<br>If you have any specific queries regarding your exam results, it is advisable to reach out to the examination department or the concerned authorities for assistance."
+        ]
+        },
+    {
+      "intent": "campus_tours",
+      "utterances": [
+        "Can I schedule a campus tour?",
+        "How can I visit the college campus?",
+        "Do you offer guided tours?"
+      ],
+      "answers": [
+        "Absolutely! We encourage prospective students to visit our campus. You can schedule a campus tour by contacting our admissions office. We offer guided tours where you'll have the opportunity to explore our facilities, interact with current students, and learn more about our college community. It's a great way to get a firsthand experience of our campus environment. We look forward to showing you around!"
+      ]
+    },
+    {
+      "intent": "academic_calendar",
+      "utterances": [
+        "What is the academic calendar for the college?",
+        "When does the semester start?",
+        "Are there any breaks during the academic year?"
+      ],
+      "answers": [
+        "The academic calendar may vary slightly from year to year, but typically our semesters start in July. Throughout the academic year, there are scheduled breaks, including a Summer break. You can find the detailed academic calendar, including semester start dates, holidays, and other important dates, on our college website or by contacting the registrar's office."
+      ]
+    },
+    {
+      "intent": "canteen",
+      "utterances": [
+        "canteen?",
+        "restaurant?"
+      ],
+      "answers": [
+        "The canteens are a hub to birthday parties and special occasion for students of Banasthali University. In Campus, there are several canteens in New and Old Market. There are 9 canteens in banasthali. Shanus, Annapurna, Mukteshwari, Desi Zykaa, Jaipur Eats, etc. All variety of vegeterian food is available in the canteens.(Only Veg Food is allowed inside the campus)"
+      ]
+    },
+    {
+      "intent": "tuition_fees",
+      "utterances": ["How much are the tuition fees?", "What is the cost of education?", "Fee structure"],
+      "answers": ["The tuition fees vary depending on the program you choose. It's best to refer to our college website or contact our admissions office for detailed information about the fee structure."]
+    },
+    {
+      "intent": "career_services",
+      "utterances": [
+        "Does the college provide career services?",
+        "Are there job placement opportunities?",
+        "Can you tell me about internships and co-op programs?"
+      ],
+      "answers": [
+        "Yes, we have a dedicated career services department that offers support to students in their career development. Our college provides various job placement opportunities through partnerships with local and national companies. We also offer internship programs and cooperative education (co-op) programs to help students gain practical work experience. Our career services team can assist you with resume building, interview preparation, and connecting with potential employers."
+      ]
+    },
+    {
+      "intent": "hostel_facilities",
+      "utterances": [
+        "What are the facilities provided in the college hostel?",
+        "Can you tell me about the amenities in the hostel?",
+        "What is available in the hostel for students?"
+      ],
+      "answers": [
+        "Our college hostel offers a range of facilities to ensure a comfortable living environment for students. Each room is equipped with basic furniture, including a bed, study table, and chair. We provide common areas for socializing, such as a lounge and recreation room. The hostel also has laundry facilities, Wi-Fi access, and 24/7 security. Additionally, there are designated dining areas where students can have their meals. Feel free to contact the hostel administration for more specific details."
+      ]
+    },
+    {
+      "intent": "hostel_rules",
+      "utterances": [
+        "What are the rules and regulations of the college hostel?",
+        "Are there any specific guidelines for living in the hostel?",
+        "Can you tell me about the code of conduct in the hostel?"
+      ],
+      "answers": [
+        "To ensure a safe and harmonious living environment, we have specific rules and regulations for our college hostel. Some common rules include adhering to quiet hours, maintaining cleanliness in the rooms and common areas, and respecting the privacy of fellow residents. We also have guidelines related to guest visits, curfew timings, and the use of hostel facilities. It's important for students to familiarize themselves with the hostel handbook provided during the orientation. Our hostel staff is always available to address any concerns or queries regarding the rules."
+      ]
+    },
+    {
+      "intent": "hostel_application",
+      "utterances": [
+        "How can I apply for a hostel room?",
+        "What is the process of getting a hostel accommodation?",
+        "When should I submit my hostel application?"
+      ],
+      "answers": [
+        "To apply for a hostel room, you can fill out the hostel accommodation form available on our college website or obtain it from the hostel administration office. The application usually requires personal details, preferred room type, and any specific requirements you may have. The specific deadlines and procedures can be found on our college administration directly."
+      ]
+    },
+    {
+      "intent": "dress_code",
+      "utterances": [
+        "What is the dress code for students?",
+        "Are there any specific clothing guidelines?",
+        "Can you tell me about the college's dress code policy?"
+      ],
+      "answers": [
+        "Our college has a dress code policy that promotes a professional and respectful environment. There is blue Khadi Kurta and Salwar/Pant to wear compulsory on Wednesday and Sunday. While other day any cotton/khadi kurta and salwar/pant, we encourage students to dress modestly and in a manner that is appropriate for an educational setting. It is important to avoid clothing that may be deemed offensive, overly revealing, or disruptive to the learning environment. The detailed dress code guidelines can be found in the student handbook or by contacting the college administration."
+      ]
+    },
+    {
+      "intent": "scholarships",
+      "utterances": [
+        "Are there any scholarships available?",
+        "Can you provide information about scholarships?",
+        "How can I apply for scholarships?"
+      ],
+      "answers": [
+        "Yes, we offer scholarships to eligible students to support their education. Our college provides various scholarship opportunities based on academic merit, financial need, or specific criteria set by donors. To apply for scholarships, you can visit administration directly and you will find information about the available scholarships, eligibility criteria, application deadlines, and the application process. Make sure to review the requirements and submit your application before the deadline to be considered for scholarships."
+      ]
+    },
+    {
+      "intent": "college_festivals",
+      "utterances": [
+        "What festivals are celebrated in the college?",
+        "Tell me about the cultural events in the college.",
+        "Are there any annual festivals or events?"
+      ],
+      "answers": [
+        "Our college celebrates various festivals and cultural events throughout the year. Some of the popular annual festivals include Holi, Navratri. These events provide an opportunity for students to showcase their talents, participate in performances, and engage in cultural activities. The college also organizes workshops, competitions, and guest lectures during these festivals. Keep an eye on the college calendar and social media platforms for updates on upcoming festivals and events."
+      ]
+    },
+    {
+      "intent": "sports_activities",
+      "utterances": [
+        "What sports activities are available in the college?",
+        "Can you tell me about the sports facilities?",
+        "Are there any sports clubs or teams?",
+        "Five-Fold Activities",
+        "Panchmukhi Shiksha"
+      ],
+      "answers": [
+        "Our college offers a range of Five-Fold Activities(Panchmukhi Shiksha) to cater to students' interests and promote a healthy lifestyle. We have well-equipped sports facilities, including a gymnasium, athletic fields, tennis courts, and indoor sports halls. Students can participate in various sports, such as football, basketball, cricket, volleyball, badminton, and more. We also have sports clubs and teams that compete in intercollegiate tournaments and leagues. Whether you're a beginner or a competitive athlete, there are opportunities for everyone to engage in sports and stay active."
+      ]
+    },
+    {
+      "intent": "sports_schedule",
+      "utterances": [
+        "Schedule of sports activities",
+        "Timing of Sports activities"
+      ],
+      "answers": ["The morning fitness programme starts at 6.00 a.m. in summer & 6.30 a.m. in winter includes Yogasans, Marshal Arts, Conditioning and Fitness exercise, and Aerobics. All these activities are carried out simultaneously at different stations at Vidula Maidan. Students join various activities according to their interest & choice.The evening programme at Vidula Maidan starts at 4.30 pm. which includes match practice for various games like Basketball, Volleyball, Athletics, Hockey, Football, Tennis, Marshal Arts, Kho-Kho, Kabaddi, Handball, Netball, Softball, Archery, Cricket & Swimming (Seasonal).Usually holidays and Tuesdays are off days for sports. "]
+    },
+      {
+        
+          "intent": "courses",
+          "utterances": ["What courses do you offer?", "Tell me about your courses", "Which programs are available?"],
+          "answers": [
+            "We offer a variety of programs at our college. Some of our available programs include:<br>Humanities & Social Sciences<br>Education<br>Life Sciences<br>Earth Sciences<br>Physical Sciences<br>Fine Arts<br>Engineering & Technology<br>Management Studies<br>Aviation<br>Mathematics & Computing<br>Law<br>Journalism<br>Nursing<br>Ph.D Programmes"
+          ]
+    },
+
+
+
+
+        {
+          "intent": "medical_health_sciences",
+          "utterances": [
+            "What are the courses offered in Medical & Health Sciences?",
+            "Tell me about the programs in Medical & Health Sciences.",
+            "Can you provide information about the courses in Medical & Health Sciences?"
+          ],
+          "answers": ["MBBS (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 5.5 years)<br>BDS (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 5 years)<br>B.Pharm (Eligibility: 10+2 with Physics, Chemistry, and Biology/Mathematics, Duration: 4 years)<br>B.Sc. Nursing (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 4 years)<br>BPT (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 4.5 years)<br>B.Optometry (Eligibility: 10+2 with Physics, Chemistry, and Biology/Mathematics, Duration: 4 years)<br>B.Sc. (Medical Laboratory Technology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Radiography) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Medical Imaging Technology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Respiratory Therapy) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Anesthesia Technology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Operation Theater Technology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Cardiac Care Technology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Renal Dialysis Technology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Optometry) (Eligibility: 10+2 with Physics, Chemistry, and Biology/Mathematics, Duration: 3 years)<br>B.Sc. (Audiology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Speech and Language Pathology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Nuclear Medicine Technology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)"]
+        },
+        {
+          "intent": "humanities_social_sciences",
+          "utterances": [
+            "What are the courses offered in Humanities & Social Sciences?",
+            "Tell me about the programs in Humanities & Social Sciences.",
+            "Can you provide information about the courses in Humanities & Social Sciences?"
+          ],
+          "answers": ["Bachelor of Arts (BA) (Eligibility: 10+2 in any stream, Duration: 3 years)<br>Bachelor of Social Work (BSW) (Eligibility: 10+2 in any stream, Duration: 3 years)<br>Bachelor of Psychology (Eligibility: 10+2 in any stream, Duration: 3 years)<br>Bachelor of Sociology (Eligibility: 10+2 in any stream, Duration: 3 years)<br>Bachelor of Political Science (Eligibility: 10+2 in any stream, Duration: 3 years)<br>Bachelor of Economics (Eligibility: 10+2 in any stream, Duration: 3 years)<br>Bachelor of History (Eligibility: 10+2 in any stream, Duration: 3 years)"]
+        },
+        {
+          "intent": "education",
+          "utterances": [
+            "What are the courses offered in Education?",
+            "Tell me about the programs in Education.",
+            "Can you provide information about the courses in Education?"
+          ],
+          "answers": ["Bachelor of Education (B.Ed) (Eligibility: Graduation in any stream, Duration: 2 years)<br>Diploma in Education (D.Ed) (Eligibility: 10+2 in any stream, Duration: 2 years)"]
+        },
+        {
+          "intent": "life_sciences",
+          "utterances": [
+            "What are the courses offered in Life Sciences?",
+            "Tell me about the programs in Life Sciences.",
+            "Can you provide information about the courses in Life Sciences?"
+          ],
+          "answers": ["B.Sc. (Biotechnology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Microbiology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Biochemistry) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Genetics) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Botany) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Zoology) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)"]
+        },
+        {
+          "intent": "earth_sciences",
+          "utterances": [
+            "What are the courses offered in Earth Sciences?",
+            "Tell me about the programs in Earth Sciences.",
+            "Can you provide information about the courses in Earth Sciences?"
+          ],
+          "answers": ["B.Sc. (Geology) (Eligibility: 10+2 with Physics, Chemistry, and Mathematics, Duration: 3 years)<br>B.Sc. (Environmental Science) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)<br>B.Sc. (Geography) (Eligibility: 10+2 in any stream, Duration: 3 years)"]
+        },
+        {
+          "intent": "physical_sciences",
+          "utterances": [
+            "What are the courses offered in Physical Sciences?",
+            "Tell me about the programs in Physical Sciences.",
+            "Can you provide information about the courses in Physical Sciences?"
+          ],
+          "answers": ["B.Sc. (Physics) (Eligibility: 10+2 with Physics, Chemistry, and Mathematics, Duration: 3 years)<br>B.Sc. (Chemistry) (Eligibility: 10+2 with Physics, Chemistry, and Mathematics, Duration: 3 years)<br>B.Sc. (Mathematics) (Eligibility: 10+2 with Mathematics, Duration: 3 years)<br>B.Sc. (Statistics) (Eligibility: 10+2 with Mathematics, Duration: 3 years)"]
+        },
+        {
+          "intent": "fine_arts",
+          "utterances": [
+            "What are the courses offered in Fine Arts?",
+            "Tell me about the programs in Fine Arts.",
+            "Can you provide information about the courses in Fine Arts?"
+          ],
+          "answers": ["Bachelor of Fine Arts (BFA) (Eligibility: 10+2 in any stream, Duration: 4 years)"]
+        },
+        {
+          "intent": "engineering_technology",
+          "utterances": [
+            "What are the courses offered in Engineering & Technology?",
+            "Tell me about the programs in Engineering & Technology.",
+            "Can you provide information about the courses in Engineering & Technology?"
+          ],
+          "answers": ["Bachelor of Technology (B.Tech) (Eligibility: 10+2 with Physics, Chemistry, and Mathematics, Duration: 4 years)<br>Bachelor of Engineering (BE) (Eligibility: 10+2 with Physics, Chemistry, and Mathematics, Duration: 4 years)"]
+        },
+        {
+          "intent": "management_studies",
+          "utterances": [
+            "What are the courses offered in Management Studies?",
+            "Tell me about the programs in Management Studies.",
+            "Can you provide information about the courses in Management Studies?"
+          ],
+          "answers": ["Bachelor of Business Administration (BBA) (Eligibility: 10+2 in any stream, Duration: 3 years)<br>Bachelor of Commerce (B.Com) (Eligibility: 10+2 in any stream, Duration: 3 years)"]
+        },
+        {
+          "intent": "aviation",
+          "utterances": [
+            "What are the courses offered in Aviation?",
+            "Tell me about the programs in Aviation.",
+            "Can you provide information about the courses in Aviation?"
+          ],
+          "answers": ["Bachelor of Aviation Management (Eligibility: 10+2 in any stream, Duration: 3 years)<br>Bachelor of Science (B.Sc.) in Aviation (Eligibility: 10+2 in any stream, Duration: 3 years)"]
+        },
+        {
+          "intent": "mathematics_computing",
+          "utterances": [
+            "What are the courses offered in Mathematics & Computing?",
+            "Tell me about the programs in Mathematics & Computing.",
+            "Can you provide information about the courses in Mathematics & Computing?"
+          ],
+          "answers": ["B.Sc. (Mathematics) (Eligibility: 10+2 with Mathematics, Duration: 3 years)<br>B.Sc. (Computer Science) (Eligibility: 10+2 with Mathematics, Duration: 3 years)<br>B.Sc. (Information Technology) (Eligibility: 10+2 with Mathematics, Duration: 3 years)<br>B.Sc. (Data Science) (Eligibility: 10+2 with Mathematics, Duration: 3 years)"]
+        },
+        {
+          "intent": "law",
+          "utterances": [
+            "What are the courses offered in Law?",
+            "Tell me about the programs in Law.",
+            "Can you provide information about the courses in Law?"
+          ],
+          "answers": ["Bachelor of Laws (LLB) (Eligibility: Graduation in any stream, Duration: 3 years)<br>Integrated Bachelor of Laws (BA LLB, B.Com LLB, BBA LLB) (Eligibility: 10+2 in any stream, Duration: 5 years)"]
+        },
+        {
+          "intent": "journalism",
+          "utterances": [
+            "What are the courses offered in Journalism?",
+            "Tell me about the programs in Journalism.",
+            "Can you provide information about the courses in Journalism?"
+          ],
+          "answers": ["Bachelor of Journalism and Mass Communication (BJMC) (Eligibility: 10+2 in any stream, Duration: 3 years)"]
+        },
+        {
+          "intent": "nursing",
+          "utterances": [
+            "What are the courses offered in Nursing?",
+            "Tell me about the programs in Nursing.",
+            "Can you provide information about the courses in Nursing?"
+          ],
+          "answers": ["B.Sc. Nursing (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 4 years)<br>General Nursing and Midwifery (GNM) (Eligibility: 10+2 with Physics, Chemistry, and Biology, Duration: 3 years)"]
+        },
+        {
+          "intent": "phd_research_program",
+          "utterances": [
+          "What are the subjects available for research in the Ph.D. program?",
+          "Can you provide information about the research facilities in the Ph.D. program?",
+          "Which subjects offer research opportunities in the Ph.D. program?"
+          ],
+          "answers": [
+          "The Ph.D. program offers research opportunities in various subjects. Some of the subjects in which research facilities are available include:<br>Computer Science<br>Pharmacy<br>Chemistry<br>Chemical Engineering<br>Bio-science and Biotechnology<br>Electronics<br>Mathematical Science<br>Physics<br>Sanskrit, Philosophy and Vedic Studies<br>Hindi and Modern Indian Languages<br>English and Modern European Languages<br>Economics<br>History and Indian Culture<br>Political Science and Public Administration<br>Sociology<br>Physical Education<br>Performing Arts<br>Visual Art<br>Home-science<br>Education<br>Commerce and Banking<br>Management<br>Design<br>Legal Studies<br>Psychology<br>Journalism and Mass Communication<br>Earth Sciences<br>Aviation<br>Automation"
+        ]
+        },
+        {
+          "intent": "website_link",
+          "utterances": [
+            "Official website link",
+          "What is the official website of the college?",
+          "Can you provide me with the link to the college's website?",
+          "How can I visit the official website of the college?"
+          ],
+          "answers": [
+          "Link for official website of the college <a href='http://www.banasthali.org/banasthali/wcms/en/home/' target='_blank'> click here</a>.",
+          "You can visit the official website of the college <a href='http://www.banasthali.org/banasthali/wcms/en/home/' target='_blank'> click here</a>.",
+          "Here is the link to the college's official website: <a href='http://www.banasthali.org/banasthali/wcms/en/home/' target='_blank'> click here</a>."
+          ]
+          },
+          {
+            "intent": "college_location",
+            "utterances": [
+            "Where is the college located?",
+            "What is the address of the college?",
+            "Can you provide me with the location of the college?"
+            ],
+            "answers": [
+            "<br><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.617289688805!2d75.87194517435572!3d26.403549281788152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc0c282ffffff%3A0x4776f298b0f0587e!2sBanasthali%20University!5e0!3m2!1sen!2sin!4v1687274791810!5m2!1sen!2sin'  style='border:1;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+            ]
+            },
+    
+        
+      
+
+          {
+            "intent": "None",
+            "utterances": [
+              "I need advice",
+              "I need some advice",
+              "can you give me some advice?",
+              "what should I do?"
+            ],
+            "answers": ["Sorry, I don't understand. Please fill this form to add your query.<a href='https://forms.gle/xEe2nWVCDMj9su8a7' target='_blank'>click</a>"]
+          }
+
+  ]
+}
